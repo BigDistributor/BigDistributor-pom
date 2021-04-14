@@ -6,7 +6,7 @@
 
     <groupId>com.bigdistributor</groupId>
     <artifactId>BigDistributor-pom</artifactId>
-    <version>${revision}</version>
+    <version>0.3</version>
     <packaging>pom</packaging>
 
     <url>https://github.com/BigDistributor</url>
@@ -88,6 +88,7 @@
         <picocli.version>4.6.1</picocli.version>
         <imglib2-ij.version>2.0.0-beta6</imglib2-ij.version>
         <multiview-reconstruction.version>0.9.0</multiview-reconstruction.version>
+        <BigStitcher.version>0.7.0</BigStitcher.version>
         <maven-invoker.version>3.0.1</maven-invoker.version>
         <maven-model.version>3.6.3</maven-model.version>
         <junit.version>4.13</junit.version>
@@ -95,10 +96,14 @@
         <guava.version>23.0</guava.version>
         <reflections.version>0.9.12</reflections.version>
 
-
-        <jackson.version>2.9.6</jackson.version>
-        <jackson-databind.version>2.6.7.4</jackson-databind.version>
-        <httpclient.version>4.3.2</httpclient.version>
+        <n5-aws-s3.version>3.1.2</n5-aws-s3.version>
+        <n5.version>2.2.1</n5.version>
+        <spark-core_2.11.version>2.4.7</spark-core_2.11.version>
+        <aws-java-sdk-sqs.version>1.11.950</aws-java-sdk-sqs.version>
+        <aws-java-sdk-lambda.version>1.11.950</aws-java-sdk-lambda.version>
+<!--        <jackson.version>2.9.6</jackson.version>-->
+        <jackson-databind.version>2.6.5</jackson-databind.version>
+        <httpclient.version>4.5.9</httpclient.version>
 
         <commons-logging.version>1.2</commons-logging.version>
         <log4j.version>1.2.17</log4j.version>
