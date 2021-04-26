@@ -101,12 +101,12 @@
         <spark-core_2.11.version>2.4.7</spark-core_2.11.version>
         <aws-java-sdk-sqs.version>1.11.950</aws-java-sdk-sqs.version>
         <aws-java-sdk-lambda.version>1.11.950</aws-java-sdk-lambda.version>
-<!--        <jackson.version>2.9.6</jackson.version>-->
+        <!--        <jackson.version>2.9.6</jackson.version>-->
         <jackson-databind.version>2.6.5</jackson-databind.version>
         <httpclient.version>4.5.9</httpclient.version>
-
         <commons-logging.version>1.2</commons-logging.version>
         <log4j.version>1.2.17</log4j.version>
+        <netty.version>4.1.30.Final</netty.version>
     </properties>
     <repositories>
         <repository>
@@ -124,6 +124,12 @@
     </repositories>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+        </dependency>
         <!--        For Annotation indexation       -->
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
@@ -131,6 +137,7 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
@@ -215,7 +222,6 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>${commons-lang.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
